@@ -1,0 +1,30 @@
+#Pip
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+
+#Virtual Environments
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+export PIP_REQUIRE_VIRTUALENV=true
+
+#Virtual Environment Pip Replacements
+if which pip >/dev/null; then
+    gpip(){
+        PIP_REQUIRE_VIRTUALENV="" pip "$@"
+    }
+fi
+if which pipdeptree >/dev/null; then
+    gpipdeptree(){
+        PIP_REQUIRE_VIRTUALENV="" pipdeptree "$@"
+    }
+fi
+if which pip-review >/dev/null; then
+    gpip-review(){
+        PIP_REQUIRE_VIRTUALENV="" pip-review "$@"
+    }
+fi
+
+#Virtual Environment Wrapper
+export VIRTUALENVWRAPPER_PROJECT_FILENAME=.project
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_HOOK_DIR=$HOME/.virtualenvs
+source $VIRTUALENVWRAPPER_SCRIPT
