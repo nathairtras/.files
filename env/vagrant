@@ -1,1 +1,6 @@
+#Aliases
+alias vup='vagrant up --provider=vmware_fusion
+
+#Environment Variables
 export VAGRANT_VMWARE_FUSION_APP="$HOME/Applications/VMWare Fusion.app"
+export VAGRANT_VMWARE_CLONE_DIRECTORY="$HOME/Vagrants/VMWare Clones/"
