@@ -2,11 +2,16 @@
 
 ##  Environment Variables
 export VAGRANT_VMWARE_FUSION_APP="$HOME/Applications/VMWare Fusion.app"
+export VAGRANT_VMWARE_CLONE_DIRECTORY="$HOME/Vagrants/VMWare Clones/"
 
 ##  Aliases
 ##      vagrant up
 alias vup='vagrant up --provider="vmware_fusion"'
 alias vupa='vagrant up --provider="aws"'
+
+alias vdown='vagrant halt'
+alias vw='vagrant suspend'
+
 
 ##      vagrant destroy (force)
 alias vboom='vagrant destroy -f'

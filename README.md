@@ -1,4 +1,4 @@
-dotfiles
+.files
 ========
 
-My dotfile repo
+Environment settings

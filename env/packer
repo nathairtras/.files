@@ -1,0 +1,6 @@
+export PACKER_CACHE_DIR=$HOME/.cache/packer
+#export PACKER_CONFIG=$HOME/.packerconfig
+export PACKER_LOG_PATH=/var/log/
+export PACKER_PLUGIN_MIN_PORT=10000
+export PACKER_PLUGIN_MAX_PORT=25000
+export PACKER_VMWARE_FUSION_APP=$HOME/Applications/VMWare\ Fusion.app
