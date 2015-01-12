@@ -1,1 +1,16 @@
+#!/usr/bin/env bash
+
+##  Environment Variables
 export VAGRANT_VMWARE_FUSION_APP="$HOME/Applications/VMWare Fusion.app"
+
+##  Aliases
+##      vagrant up
+alias vup='vagrant up --provider="vmware_fusion"'
+alias vupa='vagrant up --provider="aws"'
+
+##      vagrant destroy (force)
+alias vboom='vagrant destroy -f'
+
+##      vagrant destroy + vagrant up (vagrant retry?)
+alias vrup='vagrant destroy -f && sleep 2 && vagrant up --provider="vmware_fusion"'
+alias vrupa='vagrant destroy -f && sleep 2 &&  vagrant up --provider="aws"'

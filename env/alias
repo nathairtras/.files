@@ -1,1 +1,2 @@
+alias noproxy='unset {http,HTTP,https,HTTPS,all,ALL,ftp,FTP,socks,SOCKS,no,NO}_{proxy,PROXY}'
 alias pf='ssh -q -t home.pf "htop"'

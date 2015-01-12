@@ -1,2 +1,3 @@
 *.corp
+*.login
 tmux/tmux

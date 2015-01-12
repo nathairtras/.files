@@ -1,0 +1,18 @@
+##############################
+#  _
+# | |_ _ __ ___  _   ___  __
+# | __| '_ ` _ \| | | \ \/ /
+# | |_| | | | | | |_| |>  <
+#  \__|_| |_| |_|\__,_/_/\_\
+#
+#############################
+
+##  Create the lower  window bar
+selectp -t 0
+splitw -v -p 20
+selectp -t 1
+splitw -h -p 50
+selectp -t 1
+splitw -h -p 50
+selectp -t 3
+splitw -h -p 50
